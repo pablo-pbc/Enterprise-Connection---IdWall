@@ -1,0 +1,21 @@
+/*INICIO FONTES PADRÃO*/
+@font-face {
+    font-family: Poppins-Light;
+    src: url("../fontes/Poppins-Light.woff");
+  }
+  
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url("../fontes/Poppins-Medium.woff");
+  }
+  
+  .Poppins-Light {
+    font-family: Poppins-Light;
+  }
+  
+  .Poppins-Medium {
+    font-family: Poppins-Medium;
+  }
+  /*INICIO FONTES PADRÃO*/
+
+  
