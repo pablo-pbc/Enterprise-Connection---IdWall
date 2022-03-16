@@ -1,21 +1,141 @@
 /*INICIO FONTES PADRÃO*/
 @font-face {
-    font-family: Poppins-Light;
-    src: url("../fontes/Poppins-Light.woff");
-  }
-  
-  @font-face {
-    font-family: Poppins-Medium;
-    src: url("../fontes/Poppins-Medium.woff");
-  }
-  
-  .Poppins-Light {
-    font-family: Poppins-Light;
-  }
-  
-  .Poppins-Medium {
-    font-family: Poppins-Medium;
-  }
-  /*INICIO FONTES PADRÃO*/
+  font-family: Poppins-Light;
+  src: url("../fontes/Poppins-Light.woff");
+}
+
+@font-face {
+  font-family: Poppins-Medium;
+  src: url("../fontes/Poppins-Medium.woff");
+}
+
+.Poppins-Light {
+  font-family: Poppins-Light;
+}
+
+.Poppins-Medium {
+  font-family: Poppins-Medium;
+}
+/*FIM FONTES PADRÃO*/
+
+/*INICIO ESTILOS ID'S*/
+#body-index {
+  background: #C8C2FF;
+}
+
+#header-main {
+  margin: 0px;
+  padding: 0px;
+}
+/*FIM ESTILOS ID'S*/
+
+/*INICIO ESTILOS HEADER MAIN*/
+.nav-ul-main {
+  list-style: none;
+  margin: 100px 0px 50px 0px;
+  padding: 0px;  
+}
+
+.nav-a-main {
+  text-decoration: none;
+  color: #C8C2FF;
+  margin-left: 20px;
+  font-size: 1em;
+}
+
+.nav-a-main:hover {
+  text-decoration: none;
+  color: #C8C2FF;
+  margin-left: 20px;
+}
+
+.nav-a-icon-main {
+  text-decoration: none;
+  color: #C8C2FF;
+}
+
+.nav-a-icon-main:hover {
+  text-decoration: none;
+  color: #C8C2FF;
+  background: #210070;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.nav-li-icon-main {
+  text-align: center;
+  margin: 95px 0px 100px 0px;
+  padding: 15px 0px 15px 0px;
+}
+
+.nav-li-main {
+  color: #C8C2FF;
+  margin: 20px 0px 20px 0px;
+  padding: 15px 0px 15px 0px;
+}
+
+.nav-li-main:hover {
+  color: #C8C2FF;
+  background: #210070;
+  margin: 20px 0px 20px 0px;
+  padding: 15px 0px 15px 0px;
+}
+
+.bg-header-main {
+  background: #8561FF;
+}
+/*FIM ESTILOS HEADER MAIN*/
+
+/*INICIO ESTILOS CONTEUDO MAIN*/
+.img-logo-main {
+  height: 160px;
+  width: 315px;
+}
+
+.paraf-cont-main {
+  padding-top: 20px;
+  color: #30009f;
+  font-size: 3em;
+}
+
+.icon-hw-main {
+  height: 41px;
+  width: 41px;
+  fill: #5C00FF;
+}
+
+.txt-icons-main {
+  color: #30009f;
+  font-size: 1em;
+  margin: 0px;
+  padding: 0px;
+}
+
+.sub-txt-icons-main {
+  color: #30009f;
+  font-size: .8em;
+  margin: 0px;
+  padding: 0px;
+}
+
+.mt-cont-main {
+  margin-top: 100px;
+}
+
+/*FIM ESTILOS CONTEUDO MAIN*/
+
+
+
+.border-red{
+  border: 2px solid red;
+}
+
+.border-blue{
+  border: 2px solid blue;
+}
+
+.border-black{
+  border: 2px solid black;
+}
 
   
