@@ -121,21 +121,24 @@
 .mt-cont-main {
   margin-top: 100px;
 }
+/*FIM ESTILOS CONTEUDO MAIN*/  
 
-/*FIM ESTILOS CONTEUDO MAIN*/
+/*INICIO MEDIA QUERIES*/
+/*Telas menores que sm*/
+@media (max-width: 575.98px) {}
 
+/*Telas tamanho sm*/
+@media (min-width: 576px) and (max-width: 767.98px) {} 
 
+/*Telas tamanho md*/
+@media (min-width: 768px) and (max-width: 991.98px) {}
 
-.border-red{
-  border: 2px solid red;
-}
+/*Telas tamanho lg*/
+@media (min-width:  992px) and (max-width: 1199.98px) {}
 
-.border-blue{
-  border: 2px solid blue;
-}
+/*Telas tamanho xl*/
+@media (min-width:  1200px) and (max-width: 1399.98px) {}
 
-.border-black{
-  border: 2px solid black;
-}
-
-  
+/*Telas tamanho maiores que xl*/
+@media (min-width:  1400px) {}
+/*FIM MEDIA QUERIES*/
