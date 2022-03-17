@@ -18,6 +18,12 @@
 }
 /*FIM FONTES PADRÃO*/
 
+/*INICIO CORES PADRÃO*/
+.cor-padrao1 {
+  color: #30009F;
+}
+/*FIM CORES PADRÃO*/
+
 /*INICIO ESTILOS ID'S*/
 #body-index {
   background: #C8C2FF;
@@ -101,7 +107,7 @@
 .icon-hw-main {
   height: 41px;
   width: 41px;
-  fill: #5C00FF;
+  fill: #210070;
 }
 
 .txt-icons-main {
@@ -123,28 +129,7 @@
 }
 /*FIM ESTILOS CONTEUDO MAIN*/  
 
-/*INICIO MEDIA QUERIES*/
-/*Telas menores que sm*/
-@media (max-width: 575.98px) {}
-
-/*Telas tamanho sm*/
-@media (min-width: 576px) and (max-width: 767.98px) {} 
-
-/*Telas tamanho md*/
-@media (min-width: 768px) and (max-width: 991.98px) {}
-
-/*Telas tamanho lg*/
-@media (min-width:  992px) and (max-width: 1199.98px) {}
-
-/*Telas tamanho xl*/
-@media (min-width:  1200px) and (max-width: 1399.98px) {}
-
-/*Telas tamanho maiores que xl*/
-@media (min-width:  1400px) {}
-/*FIM MEDIA QUERIES*/
-
 /*INICIO ESTILOS MONITOR*/
-
 .container--monitor{
   display: flex;
   flex-direction: column;
@@ -205,5 +190,82 @@ table.table {
 .pagination, .page-item, .page-link {
   color: #5C00FF;
 }
-
 /*FIM ESTILOS MONITOR*/
+
+/*INICIO ESTILOS SEARCH CLIENTS*/
+.bg-sec-sc {
+  background: #8561FF;
+}
+
+.label-search-client {
+  border: 2px solid #8561FF;
+  height: 60px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+form ::placeholder {
+  color: #8561FF;
+  opacity: 70%;
+  font-size: 1.2em;
+  font-family: Poppins-Light;
+}
+
+.nome-label-sc {
+  font-size: 1.3em;
+}
+
+.btn-sc {
+  height: 40px;
+  width: 60%;
+  border: #8561FF;
+  border-radius: 5px;
+  background: #8561FF;
+  color: #C8C2FF;
+  font-size: 1.2em;
+}
+
+.btn-sc:hover {
+  height: 40px;
+  width: 60%;
+  border: #5C00FF;
+  border-radius: 5px;
+  background: #5C00FF;
+  color: #C8C2FF;
+  font-size: 1.2em;
+}
+
+.full-list-sc-a {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #210070;
+}
+
+.full-list-sc-a:hover {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #210070;
+  border-bottom: 2px solid #210070;
+}
+
+/*FIM ESTILOS SEARCH CLIENTS*/
+
+/*INICIO MEDIA QUERIES*/
+/*Telas menores que sm*/
+@media (max-width: 575.98px) {}
+
+/*Telas tamanho sm*/
+@media (min-width: 576px) and (max-width: 767.98px) {} 
+
+/*Telas tamanho md*/
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+/*Telas tamanho lg*/
+@media (min-width:  992px) and (max-width: 1199.98px) {}
+
+/*Telas tamanho xl*/
+@media (min-width:  1200px) and (max-width: 1399.98px) {}
+
+/*Telas tamanho maiores que xl*/
+@media (min-width:  1400px) {}
+/*FIM MEDIA QUERIES*/
