@@ -142,3 +142,68 @@
 /*Telas tamanho maiores que xl*/
 @media (min-width:  1400px) {}
 /*FIM MEDIA QUERIES*/
+
+/*INICIO ESTILOS MONITOR*/
+
+.container--monitor{
+  display: flex;
+  flex-direction: column;
+}
+
+.box--container--monitor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+
+.nav--pesquisa form {
+  display: flex;
+}
+
+.bottons--monitor{
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+
+.button--pesquisar{
+  width: 40%;
+  height: 40px;
+  color: #fff;
+  background-color: #5C00FF;
+  border-radius: 5px;
+  font-family: "Poppins-Light", sans-serif;
+}
+
+.logo--monitor img {
+  height: 100px;
+  width: 170px;
+}
+
+form label , #protocolo, #protocoloTipo, #status--monitor, #online--monitor{
+  font-family: "Poppins-Light", sans-serif;
+  color: #5C00FF;
+  border-color: #8561FF;
+  border-radius: 8px;
+}
+
+table.table {
+  color: #5C00FF;
+  width: 85%;
+  margin-top: 5%;
+  align-self: center;
+  font-family: "Poppins-Light", sans-serif;
+}
+
+.pagination {
+  margin-top: 1%;
+  margin-left: 7.5%;
+}
+
+.pagination, .page-item, .page-link {
+  color: #5C00FF;
+}
+
+/*FIM ESTILOS MONITOR*/
