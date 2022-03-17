@@ -33,5 +33,87 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
   </body>
+  <div class="container--monitor">
+  <header class="box--container--monitor">
+    <div class="logo--monitor"><a href="/index.html"><img src="\imagens\logoidwall.png"></a>
 
+    </div>
+    <div class="nav--pesquisa">
+      <form action="/action_page.php">
+        <label for="protocolo">Protocolo nº</label><br>
+        <input type="text" id="protocolo" name="protocolo" value=""><br>
+        <label for="protocoloTipo">Protocolo tipo</label><br>
+        <input type="text" id="protocoloTipo" name="protocoloTipo" value=""><br><br>
+        <label for="status--monitor">Status</label><br>
+        <input type="text" id="status--monitor" name="status--monitor" value=""><br>
+        <label for="online--monitor">Online</label><br>
+        <input type="text" id="online--monitor" name="online--monitor" value=""><br><br>
+      </form> 
+      <div class="bottons--monitor">
+        <input type="button"  class="button--pesquisar" value="Pesquisar">
+        <input  type="button"  class="button--pesquisar" value="Limpar Pesquisa">
+      </div>
+    </div>
+  </header>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nº Protocolo</th>
+        <th scope="col">Tipo Protocolo</th>
+        <th scope="col">Status</th>
+        <th scope="col">Online</th>
+        <th scope="col">Ação</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1111</th>
+        <td>Infrações Dentran</td>
+        <td>Normal</td>
+        <td>Pausado</td>
+        <td>Acessar</td>
+      </tr>
+      <tr>
+        <th scope="row">2222</th>
+        <td>Situação cadastral PJ</td>
+        <td>Pré processamento</td>
+        <td>Não</td>
+        <td>Acessar</td>
+      </tr>
+      <tr>
+        <th scope="row">3333</th>
+        <td>Situação cadastral PF</td>
+        <td>Processamento</td>
+        <td>Não</td>
+        <td>Acessar</td>
+      </tr>
+      <tr>
+        <th scope="row">4444</th>
+        <td>Antecedentes Criminais</td>
+        <td>Em análise</td>
+        <td>Não</td>
+        <td>Acessar</td>
+      </tr>
+    </tbody>
+  </table>
+  <nav aria-label="Navegação de página exemplo">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Anterior">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Anterior</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Próximo">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>
 </html>
