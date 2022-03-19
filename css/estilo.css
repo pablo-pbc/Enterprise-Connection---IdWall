@@ -22,6 +22,14 @@
 .cor-padrao1 {
   color: #30009F;
 }
+
+.cor-padrao2 {
+  color: #210070;
+}
+
+.bg-menu-white {
+  background: white;
+}
 /*FIM CORES PADRÃO*/
 
 /*INICIO ESTILOS ID'S*/
@@ -247,8 +255,43 @@ form ::placeholder {
   color: #210070;
   border-bottom: 2px solid #210070;
 }
-
 /*FIM ESTILOS SEARCH CLIENTS*/
+
+/*INICIO ESTILOS SPECIFIC CLIENT*/
+.mt-ajuste {
+  margin-top: 80px;
+}
+
+.title-size {
+  font-size: 3em;
+}
+
+.subtitle-size {
+  font-size: 1.3em;
+}
+
+.div-especify-client {
+  font-size: 2.5em;
+  border: 2px solid #210070;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.div-especify-client:hover {
+  font-size: 2.5em;
+  border: 2px solid #210070;
+  border-radius: 10px;
+  margin-top: 50px;
+  background: #f3f2ff;
+}
+
+.logo-specify-client {
+  height: 160px;
+  width: 160px;
+  margin-bottom: 200px;
+  margin-top: 200px;
+}
+/*FIM ESTILOS SPECIFIC CLIENT*/
 
 /*INICIO MEDIA QUERIES*/
 /*Telas menores que sm*/
