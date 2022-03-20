@@ -27,6 +27,10 @@
   color: #210070;
 }
 
+.cor-padrao3 {
+  color: #30009F;
+}
+
 .bg-menu-white {
   background: white;
 }
@@ -292,6 +296,64 @@ form ::placeholder {
   margin-top: 200px;
 }
 /*FIM ESTILOS SPECIFIC CLIENT*/
+
+/*INICIO ESTILOS TELA DASH CLINTE*/
+.navbar-light .navbar-nav .nav-link {
+  color: #210070;
+}
+
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+  color: #C8C2FF;
+}
+
+.img-hw-dash-cliente {
+  height: 70px;
+  width: 90px;
+}
+
+.name-fsize-dash-cliente {
+  font-size: 1.5em;
+}
+
+.icon-dash-client {
+  height: 40px;
+  width: 40px;
+  fill: #30009F;
+}
+
+.box-content-dash {
+  background: #C8C2FF;
+  border-radius: 10px;
+}
+
+.box-content1-dash {
+  background: #C8C2FF;
+  border-radius: 10px;
+}
+
+.link-content-graf-dash {
+  text-decoration: none;
+  list-style: none;
+}
+
+.link-content-dash {
+  text-decoration: none;
+  list-style: none;
+}
+
+.link-content-dash:hover {
+  text-decoration: none;
+  list-style: none;
+  color: #30009f;
+  border-bottom:2px solid #30009f;
+}
+
+.box-content-dash:hover {
+  text-decoration: none;
+  list-style: none;
+  background: #8561FF;
+}
+/*FIM ESTILOS TELA DASH CLINTE*/
 
 /*INICIO MEDIA QUERIES*/
 /*Telas menores que sm*/
