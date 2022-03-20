@@ -97,29 +97,47 @@
   
       </div>
       <div class="nav--pesquisa">
-        <form action="/action_page.php">
-          <label for="protocolo">Protocolo nº</label><br>
-          <input type="text" id="protocolo" name="protocolo" value=""><br>
-          <label for="protocoloTipo">Protocolo tipo</label><br>
-          <input type="text" id="protocoloTipo" name="protocoloTipo" value=""><br><br>
-          <label for="status--monitor">Status</label><br>
-          <input type="text" id="status--monitor" name="status--monitor" value=""><br>
-          <label for="online--monitor">Online</label><br>
-          <input type="text" id="online--monitor" name="online--monitor" value=""><br><br>
-        </form> 
+        <form class="row g-3 estilos--header">
+          <div class="col-md-2 ">
+            <label for="inputCity" class="form-label Poppins-Medium cor-padrao1 mb-2 ">Protocolo nº</label>
+            <input type="text" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="inputCity" class="form-label Poppins-Medium cor-padrao1 mb-2 ">Protocolo tipo</label>
+            <input type="text" class="form-control" >
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label Poppins-Medium cor-padrao1 mb-2 ">Status</label>
+            <select type="text" class="form-select" >
+              <option></option>
+              <option>Normal</option>
+              <option>Pré processamento</option>
+              <option>Processamento</option>
+              <option>Em análise</option>
+            </select>
+          </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label Poppins-Medium cor-padrao1 mb-2">Online</label>
+              <select type="text" class="form-select " >
+                <option></option>
+                <option>Online</option>
+                <option>Offline</option>
+              </select>
+            </div>
+        </form>
         <div class="bottons--monitor">
           <input type="button"  class="button--pesquisar" value="Pesquisar">
           <input  type="button"  class="button--pesquisar" value="Limpar Pesquisa">
         </div>
       </div>
     </header>
-    <table class="table">
-      <thead>
+    <table class="table table--line Poppins-Medium cor-padrao1 mb-2">
+      <thead >
         <tr>
           <th scope="col">Nº Protocolo</th>
           <th scope="col">Tipo Protocolo</th>
-          <th scope="col">Status</th>
-          <th scope="col">Online</th>
+          <th scope="col" class="mobile--monitor" >Status</th>
+          <th scope="col" class="mobile--monitor">Online</th>
           <th scope="col">Ação</th>
         </tr>
       </thead>
@@ -127,34 +145,41 @@
         <tr>
           <th scope="row">1111</th>
           <td>Infrações Dentran</td>
-          <td>Normal</td>
-          <td>Pausado</td>
-          <td>Acessar</td>
+          <td class="mobile--monitor">Normal</td>
+          <td class="mobile--monitor">Pausado</td>
+          <td><button class="button-acess">Acessar</button></td>
         </tr>
         <tr>
           <th scope="row">2222</th>
           <td>Situação cadastral PJ</td>
-          <td>Pré processamento</td>
-          <td>Não</td>
-          <td>Acessar</td>
+          <td class="mobile--monitor">Pré processamento</td>
+          <td class="mobile--monitor">Não</td>
+          <td><button class="button-acess">Acessar</button></td>
         </tr>
         <tr>
           <th scope="row">3333</th>
           <td>Situação cadastral PF</td>
-          <td>Processamento</td>
-          <td>Não</td>
-          <td>Acessar</td>
+          <td class="mobile--monitor">Processamento</td>
+          <td class="mobile--monitor">Não</td>
+          <td><button class="button-acess">Acessar</button></td>
         </tr>
         <tr>
           <th scope="row">4444</th>
           <td>Antecedentes Criminais</td>
-          <td>Em análise</td>
-          <td>Não</td>
-          <td>Acessar</td>
+          <td class="mobile--monitor">Em análise</td>
+          <td class="mobile--monitor">Não</td>
+          <td><button class="button-acess">Acessar</button></td>
+        </tr>
+        <tr>
+          <th scope="row">5555</th>
+          <td>Infrações Dentran</td>
+          <td class="mobile--monitor">Pré processamento</td>
+          <td class="mobile--monitor">Não</td>
+          <td><button class="button-acess">Acessar</button></td>
         </tr>
       </tbody>
     </table>
-    <nav aria-label="Navegação de página exemplo">
+    <nav aria-label="Navegação de página exemplo" class="pagination--container--monitor">
       <ul class="pagination">
         <li class="page-item">
           <a class="page-link" href="#" aria-label="Anterior">

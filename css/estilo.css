@@ -148,17 +148,26 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin-top: 5%;
+  margin: 5% -7%;
 }
 
 .nav--pesquisa form {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .bottons--monitor{
   display: flex;
-  margin-top: 15px;
+  margin-top: 25px;
   justify-content: space-between;
+}
+
+.button-acess {
+  background: #C8C2FF;
+  color: #210070;
+  border-color: #C8C2FF;
+  border-radius: 3px;
 }
 
 .button--pesquisar{
@@ -170,9 +179,15 @@
   font-family: "Poppins-Light", sans-serif;
 }
 
+.form-control , .form-select {
+  border-color: #8561FF!important;
+  font-family: "Poppins-Light", sans-serif;
+  color: #5C00FF;
+}
+
 .logo--monitor img {
-  height: 100px;
-  width: 170px;
+  height: 120px;
+  width: 230px;
 }
 
 form label , #protocolo, #protocoloTipo, #status--monitor, #online--monitor{
@@ -183,11 +198,12 @@ form label , #protocolo, #protocoloTipo, #status--monitor, #online--monitor{
 }
 
 table.table {
-  color: #5C00FF;
+  /* color: #5C00FF; */
   width: 85%;
-  margin-top: 5%;
+  margin-top: 2%;
+  text-align: center;
   align-self: center;
-  font-family: "Poppins-Light", sans-serif;
+  /* font-family: "Poppins-Light", sans-serif; */
 }
 
 .pagination {
@@ -198,6 +214,7 @@ table.table {
 .pagination, .page-item, .page-link {
   color: #5C00FF;
 }
+
 /*FIM ESTILOS MONITOR*/
 
 /*INICIO ESTILOS SEARCH CLIENTS*/
@@ -295,7 +312,98 @@ form ::placeholder {
 
 /*INICIO MEDIA QUERIES*/
 /*Telas menores que sm*/
-@media (max-width: 575.98px) {}
+@media only screen and (max-width: 600px) {
+.logo--monitor img {
+  height: 60px;
+  width: 115px;
+  margin-top: 15%;
+}
+.logo--monitor {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.box--container--monitor {
+    display: block;
+    margin: 0;
+}
+
+.pagination--container--monitor{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.pagination{
+  margin: 0;
+}
+
+.mobile--monitor{
+  display: none;
+}
+
+table.table {
+  width: 95%;
+}
+}
+
+/*INICIO ESTILOS SEARCH ALL-CLIENTS*/
+
+.logo--all-clients--client{
+  width: 25px;
+  height: 25px;
+}
+
+.status--active {
+  color: green;
+}
+
+.status--inactive {
+  color: red;
+}
+
+.style--some--clients {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 85%;
+}
+
+body.container--some--clients{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.some--clients--style {
+ margin-top: 3%!important;
+}
+
+.pagination--container--some-clients {
+  display: flex;
+    width: 100%;
+}
+
+/*FIM ESTILOS SEARCH ALL-CLIENTS*/
+
+@media (max-width: 767.98px) {
+  .style--some--clients {
+    display: block;
+  }
+
+  .mobile-font{
+    font-size: 2.5em!important;
+  }
+
+  .mobile--logo-style{
+    margin: 0!important;
+  }
+.estilo--logo--some-clients{
+  height: 60px!important;
+  width: 115px!important;
+  margin-top: 5%;
+  margin-left: 70%;
+}
+}
 
 /*Telas tamanho sm*/
 @media (min-width: 576px) and (max-width: 767.98px) {} 

@@ -90,6 +90,146 @@
         </div>  <!--Fim menu de navegação Offcanvas -->
       </div>
     </div>  <!--Fim div para o menu de navegação-->
+    <div class="container--monitor">
+      <header class="box--container--monitor">
+        <div class="logo--monitor"><a href="index.html"><img src="imagens\logoidwall.png"></a>
+    
+        </div>
+        <div class="nav--pesquisa">
+          <form class="row g-3 estilos--header">
+            <div class="col-md-2 ">
+              <label for="inputCity" class="form-label Poppins-Medium cor-padrao1 mb-2 ">Código</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-md-2">
+              <label for="inputCity" class="form-label Poppins-Medium cor-padrao1 mb-2 ">Nome</label>
+              <input type="text" class="form-control" >
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label Poppins-Medium cor-padrao1 mb-2 ">CNPJ</label>
+              <input type="text" class="form-control">
+            </div>
+              <div class="col-md-2">
+                <label for="inputZip" class="form-label Poppins-Medium cor-padrao1 mb-2">Telefone
+                </label>
+                <input type="text" class="form-control">
+              </div>
+          </form>
+          <form class="row g-3 estilos--header">
+            <div class="col-md-2 ">
+              <label for="inputCity" class="form-label Poppins-Medium cor-padrao1 mb-2 ">Email</label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="col-md-2">
+              <label for="inputCity" class="form-label Poppins-Medium cor-padrao1 mb-2 ">Protocolo nº</label>
+              <input type="text" class="form-control" >
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label Poppins-Medium cor-padrao1 mb-2 ">Protocolo tipo</label>
+              <input type="text" class="form-control">
+            </div>
+              <div class="col-md-2">
+                <label for="inputZip" class="form-label Poppins-Medium cor-padrao1 mb-2">Status
+                </label>
+                <select type="text" class="form-select " >
+                  <option></option>
+                  <option>Ativo</option>
+                  <option>Inativo</option>
+                </select>
+              </div>
+          </form>
+          <div class="bottons--monitor">
+            <input type="button"  class="button--pesquisar" value="Pesquisar">
+            <input  type="button"  class="button--pesquisar" value="Limpar Pesquisa">
+          </div>
+        </div>
+      </header>
+      <table class="table table--line Poppins-Medium cor-padrao1 mb-2">
+        <thead >
+          <tr>
+            <th scope="col">Código</th>
+            <th scope="col">Nome</th>
+            <th scope="col" class="mobile--monitor" >Email</th>
+            <th scope="col" class="mobile--monitor" >Telefone</th>
+            <th scope="col" class="mobile--monitor">Tipo Protocolo</th>
+            <th scope="col" class="mobile--monitor" >Nº Protocolo</th>
+            <th scope="col" class="mobile--monitor">Status</th>
+            <th scope="col">Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td><img  class="logo--all-clients--client"src="/imagens/ifood.png"> Ifood</td>
+            <td class="mobile--monitor">ifood@mail.com</td>
+            <td class="mobile--monitor">1111-1111</td>
+            <td class="mobile--monitor">Cadastro Motoboy</td>
+            <td class="mobile--monitor">1111</td>
+            <td class="mobile--monitor status--active">Ativo</td>
+            <td><button class="button-acess">Acessar</button></td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Cliente 2</td>
+            <td class="mobile--monitor">client@mail.com</td>
+            <td class="mobile--monitor">1111-1111</td>
+            <td class="mobile--monitor">Cadastro Motoboy</td>
+            <td class="mobile--monitor">2222</td>
+            <td class="mobile--monitor status--inactive">Inativo</td>
+            <td><button class="button-acess">Acessar</button></td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Cliente 3</td>
+            <td class="mobile--monitor">client@mail.com</td>
+            <td class="mobile--monitor">1111-1111</td>
+            <td class="mobile--monitor">Cadastro Motoboy</td>
+            <td class="mobile--monitor">3333</td>
+            <td class="mobile--monitor status--active">Ativo</td>
+            <td><button class="button-acess">Acessar</button></td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Cliente 4</td>
+            <td class="mobile--monitor">client@mail.com</td>
+            <td class="mobile--monitor">1111-1111</td>
+            <td class="mobile--monitor">Cadastro Motoboy</td>
+            <td class="mobile--monitor">4444</td>
+            <td class="mobile--monitor status--inactive">Inativo</td>
+            <td><button class="button-acess">Acessar</button></td>
+          </tr>
+          <tr>
+            <th scope="row">5</th>
+            <td>Cliente 5</td>
+            <td class="mobile--monitor">client@mail.com</td>
+            <td class="mobile--monitor">1111-1111</td>
+            <td class="mobile--monitor">Cadastro Motoboy</td>
+            <td class="mobile--monitor">5555</td>
+            <td class="mobile--monitor status--active">Ativo</td>
+            <td><button class="button-acess">Acessar</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <nav aria-label="Navegação de página exemplo" class="pagination--container--monitor">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Anterior">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Anterior</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Próximo">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Próximo</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
 
     <!-- JavaScript (Opcional) -->
