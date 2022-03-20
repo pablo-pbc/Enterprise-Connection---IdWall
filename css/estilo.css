@@ -31,6 +31,10 @@
   color: #30009F;
 }
 
+.cor-padrao4 {
+  color: #C8C2FF;
+}
+
 .bg-menu-white {
   background: white;
 }
@@ -48,9 +52,20 @@
 /*FIM ESTILOS ID'S*/
 
 /*INICIO ESTILOS HEADER MAIN*/
+.link-voltar-offcanvas {
+  text-decoration: none;
+  list-style: none;
+}
+
+.link-voltar-offcanvas:hover {
+  text-decoration: none;
+  list-style: none;
+  border-bottom:2px solid #C8C2FF;
+}
+
 .nav-ul-main {
   list-style: none;
-  margin: 100px 0px 50px 0px;
+  margin: 50px 0px 50px 0px;
   padding: 0px;  
 }
 
@@ -82,7 +97,7 @@
 
 .nav-li-icon-main {
   text-align: center;
-  margin: 50px 0px 71px 0px;
+  margin: 30px 0px 0px 0px;
   padding: 15px 0px 15px 0px;
 }
 
@@ -101,6 +116,10 @@
 
 .bg-header-main {
   background: #8561FF;
+}
+
+.bg-div-header-index {
+  background: #C8C2FF;
 }
 /*FIM ESTILOS HEADER MAIN*/
 
@@ -205,6 +224,18 @@ table.table {
 /*FIM ESTILOS MONITOR*/
 
 /*INICIO ESTILOS SEARCH CLIENTS*/
+.bg-div-header-search-client {
+  background: #8561FF;
+}
+
+.title-size-sc {
+  font-size: 4em;
+}
+
+.subtitle-size-sc {
+  font-size: 1.9em;
+}
+
 .bg-sec-sc {
   background: #8561FF;
 }
@@ -239,7 +270,6 @@ form ::placeholder {
 
 .btn-sc:hover {
   height: 40px;
-  width: 60%;
   border: #5C00FF;
   border-radius: 5px;
   background: #5C00FF;
@@ -259,9 +289,18 @@ form ::placeholder {
   color: #210070;
   border-bottom: 2px solid #210070;
 }
+
+.logo-sc {
+  width: 230px;
+  height: 120px;
+}
 /*FIM ESTILOS SEARCH CLIENTS*/
 
 /*INICIO ESTILOS SPECIFIC CLIENT*/
+.bg-div-header-especif-client {
+  background: white;
+}
+
 .mt-ajuste {
   margin-top: 80px;
 }
@@ -357,19 +396,270 @@ form ::placeholder {
 
 /*INICIO MEDIA QUERIES*/
 /*Telas menores que sm*/
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+  .img-logo-main {
+    height: 70px;
+    width: 150px;
+  }
+
+  .paraf-cont-main {
+    padding-top: 20px;
+    color: #30009f;
+    font-size: 1.5em;
+  }
+
+  .nav-ul-main {
+    list-style: none;
+    margin: 30px 0px 30px 0px;
+    padding: 0px;  
+  }
+  
+  .nav-a-main {
+    text-decoration: none;
+    color: #C8C2FF;
+    margin-left: 20px;
+    font-size: 1em;
+  }
+  
+  .nav-a-main:hover {
+    text-decoration: none;
+    color: #C8C2FF;
+    margin-left: 20px;
+  }
+  
+  .nav-a-icon-main {
+    text-decoration: none;
+    color: #C8C2FF;
+  }
+  
+  .nav-a-icon-main:hover {
+    text-decoration: none;
+    color: #C8C2FF;
+    background: #210070;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  
+  .nav-li-icon-main {
+    text-align: start;
+    margin: 20px 0px 0px 20px;
+    padding: 15px 0px 15px 0px;
+  }
+  
+  .nav-li-main {
+    color: #C8C2FF;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+  }
+  
+  .nav-li-main:hover {
+    color: #C8C2FF;
+    background: #210070;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
+  }
+
+  .title-size {
+    font-size: 2.3em;
+  }
+  
+  .subtitle-size {
+    font-size: 0.8em;
+  }
+
+  .div-especify-client {
+    font-size: 1.5em;
+    border: 2px solid #210070;
+    border-radius: 10px;
+    margin-top: 25px;
+  }
+  
+  .div-especify-client:hover {
+    font-size: 1.5em;
+    border: 2px solid #210070;
+    border-radius: 10px;
+    margin-top: 25px;
+    background: #f3f2ff;
+  }
+  
+  .logo-specify-client {
+    height: 80px;
+    width: 80px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+
+  .bg-div-header-search-client {
+    background: white;
+  }
+
+  .title-size-sc {
+    font-size: 1.8em;
+  }
+  
+  .subtitle-size-sc {
+    font-size: .9em;
+  }
+
+  .label-search-client {
+    border: 2px solid #8561FF;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  form ::placeholder {
+    color: #8561FF;
+    opacity: 70%;
+    font-size: 1em;
+    font-family: Poppins-Light;
+  }
+  
+  .nome-label-sc {
+    font-size: 1.1em;
+  }
+
+  .btn-sc {
+    height: 40px;
+    width: 100%;
+    border: #8561FF;
+    border-radius: 5px;
+    background: #8561FF;
+    color: #C8C2FF;
+    font-size: 1.2em;
+  }
+}
 
 /*Telas tamanho sm*/
-@media (min-width: 576px) and (max-width: 767.98px) {} 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .bg-div-header-search-client {
+    background: white;
+  }
+} 
 
 /*Telas tamanho md*/
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .bg-div-header-search-client {
+    background: white;
+  }
+}
 
 /*Telas tamanho lg*/
-@media (min-width:  992px) and (max-width: 1199.98px) {}
+@media (min-width:  992px) and (max-width: 1199.98px) {
+
+  .logo-sc {
+    width: 180px;
+    height: 80px;
+  }
+
+  .mt-5 {
+    margin-top: 0.2rem !important;
+  }
+  
+  .title-size-sc {
+    font-size: 2.5em;
+  }
+  
+  .subtitle-size-sc {
+    font-size: 1.2em;
+  }
+  
+  .label-search-client {
+    border: 2px solid #8561FF;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  form ::placeholder {
+    color: #8561FF;
+    opacity: 70%;
+    font-size: 1.0em;
+    font-family: Poppins-Light;
+  }
+  
+  .nome-label-sc {
+    font-size: 1.1em;
+  }
+  
+  .btn-sc {
+    height: 40px;
+    width: 100%;
+    border: #8561FF;
+    border-radius: 5px;
+    background: #8561FF;
+    color: #C8C2FF;
+    font-size: 1em;
+  }
+  
+  .btn-sc:hover {
+    height: 40px;
+    border: #5C00FF;
+    border-radius: 5px;
+    background: #5C00FF;
+    color: #C8C2FF;
+    font-size: 1em;
+  }
+  
+}
 
 /*Telas tamanho xl*/
-@media (min-width:  1200px) and (max-width: 1399.98px) {}
+@media (min-width:  1200px) and (max-width: 1399.98px) {
+
+  .logo-sc {
+    width: 180px;
+    height: 80px;
+  }
+
+  .mt-5 {
+    margin-top: 0.2rem !important;
+  }
+  
+  .title-size-sc {
+    font-size: 2.5em;
+  }
+  
+  .subtitle-size-sc {
+    font-size: 1.2em;
+  }
+  
+  .label-search-client {
+    border: 2px solid #8561FF;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  form ::placeholder {
+    color: #8561FF;
+    opacity: 70%;
+    font-size: 1.0em;
+    font-family: Poppins-Light;
+  }
+  
+  .nome-label-sc {
+    font-size: 1.1em;
+  }
+  
+  .btn-sc {
+    height: 40px;
+    width: 100%;
+    border: #8561FF;
+    border-radius: 5px;
+    background: #8561FF;
+    color: #C8C2FF;
+    font-size: 1em;
+  }
+  
+  .btn-sc:hover {
+    height: 40px;
+    border: #5C00FF;
+    border-radius: 5px;
+    background: #5C00FF;
+    color: #C8C2FF;
+    font-size: 1em;
+  }
+}
 
 /*Telas tamanho maiores que xl*/
 @media (min-width:  1400px) {}

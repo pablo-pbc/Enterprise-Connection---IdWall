@@ -11,6 +11,9 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 
+    <!-- JS -->
+    <script src="js/javascript.js"></script>
+
     <!-- Estilo CSS -->
     <link rel="stylesheet" type="text/css" href="css/estilo.css">
 
@@ -25,74 +28,89 @@
 
   <body class="container-fluid">
     
-    <div class="row"> <!--Inicio div para o menu de navegação-->
-      <div class="col-1 m-4 p-0 fixed-top">
-        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"> <!--Inicio icone para o menu de navegação Offcanvas -->
-          <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-list icon-hw-main" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-          </svg>
-        </a> <!--Fim icone para o menu de navegação Offcanvas -->
-        
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background: #8561FF;"> <!--Inicio menu de navegação Offcanvas -->
-          <div>
-            <header id="header-main" class="bg-header-main">
-              <nav class="nav-main">
-                <ul class="nav-ul-main Poppins-Medium">
-        
-                  <li class="nav-li-main">
-                    <a href="#" class="nav-a-main">Protocolos</a>
-                  </li>
-        
-                  <li class="nav-li-main">
-                    <a href="#" class="nav-a-main">Documentos</a>
-                  </li>
-        
-                  <li class="nav-li-main">
-                    <a href="searchclients.html" class="nav-a-main">Clientes</a>
-                  </li>
-        
-                  <li class="nav-li-main">
-                    <a href="#" class="nav-a-main">Fontes</a>
-                  </li>
-        
-                  <li class="nav-li-main">
-                    <a href="#" class="nav-a-main">Matrizes</a>
-                  </li>
-        
-                  <li class="nav-li-main">
-                    <a href="#" class="nav-a-main">Regras</a>
-                  </li>
-        
-                  <li class="nav-li-main">
-                    <a href="#" class="nav-a-main">Atributos</a>
-                  </li>
-        
-                  <li class="nav-li-main">
-                    <a href="dash-monitor.html" class="nav-a-main">Monitor</a>
-                  </li>
-        
-                  <li class="nav-li-main">
-                    <a href="#" class="nav-a-main">Organizações</a>
-                  </li>
-        
-                  <li class="nav-li-icon-main">
-                    <a href="index.html" class="nav-a-icon-main">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#C8C2FF" class="bi bi-power" viewBox="0 0 16 16">
-                        <path d="M7.5 1v7h1V1h-1z"/>
-                        <path d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"/>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </header>       
-          </div>
-        </div>  <!--Fim menu de navegação Offcanvas -->
+    <div class="row fixed-top m-0 p-0"> <!--Inicio div para o menu de navegação-->
+
+      <div class="col-12 col-sm-12 col-md-12 col-lg-5 bg-div-header-search-client">
+        <div class="col-12 col-md-5 m-4 p-0">
+
+          <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"> <!--Inicio icone para o menu de navegação Offcanvas -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-list icon-hw-main" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </a> <!--Fim icone para o menu de navegação Offcanvas -->
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background: #8561FF;"> <!--Inicio menu de navegação Offcanvas -->
+            
+            <div class="offcanvas-header"> <!--Inicio link voltar do offcanvas-->
+              <a href="index.html" class="link-voltar-offcanvas">
+                <h5 class="offcanvas-title Poppins-Medium cor-padrao4" id="offcanvasNavbarLabel"> < Voltar</h5>
+              </a>              
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div> <!--Fim link voltar do offcanvas-->
+  
+            <div>
+              <header id="header-main" class="bg-header-main">
+                <nav class="nav-main">
+                  <ul class="nav-ul-main Poppins-Medium">
+          
+                    <li class="nav-li-main">
+                      <a href="#" class="nav-a-main">Protocolos</a>
+                    </li>
+          
+                    <li class="nav-li-main">
+                      <a href="#" class="nav-a-main">Documentos</a>
+                    </li>
+          
+                    <li class="nav-li-main">
+                      <a href="searchclients.html" class="nav-a-main">Clientes</a>
+                    </li>
+          
+                    <li class="nav-li-main">
+                      <a href="#" class="nav-a-main">Fontes</a>
+                    </li>
+          
+                    <li class="nav-li-main">
+                      <a href="#" class="nav-a-main">Matrizes</a>
+                    </li>
+          
+                    <li class="nav-li-main">
+                      <a href="#" class="nav-a-main">Regras</a>
+                    </li>
+          
+                    <li class="nav-li-main">
+                      <a href="#" class="nav-a-main">Atributos</a>
+                    </li>
+          
+                    <li class="nav-li-main">
+                      <a href="dash-monitor.html" class="nav-a-main">Monitor</a>
+                    </li>
+          
+                    <li class="nav-li-main">
+                      <a href="#" class="nav-a-main">Organizações</a>
+                    </li>
+          
+                    <li class="nav-li-icon-main">
+                      <a href="index.html" class="nav-a-icon-main">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#C8C2FF" class="bi bi-power" viewBox="0 0 16 16">
+                          <path d="M7.5 1v7h1V1h-1z"/>
+                          <path d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"/>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </header>       
+            </div> 
+
+          </div>  <!--Fim menu de navegação Offcanvas -->
+        </div>
+
       </div>
+      
     </div>  <!--Fim div para o menu de navegação-->
 
     <div class="row">
-      <div class="col-md-5 d-none d-md-block m-0 p-0"> <!-- Inicio primeira coluna da pagina searchclients -->
+      <div class="col-12 col-sm-12 col-md-12 col-lg-5 d-none d-lg-block m-0 p-0"> <!-- Inicio primeira coluna da pagina searchclients -->
         <section class="d-flex align-items-center col-md-12 bg-sec-sc" style="height: 100vh;">
           <div class="d-flex justify-content-center">  
             <div class="col-md-8">
@@ -101,39 +119,41 @@
           </div>
         </section>
       </div> <!-- Fim primeira coluna da pagina searchclients -->
-      
 
-      <section class="col-md-7"> <!-- Inicio segunda coluna da pagina searchclients -->
-        <div class="row justify-content-end mt-5 me-5 p-0"> <!--inicio Logo-->
-          <img src="imagens/logoidwall.png" style="height: 120px; width: 230px;">
+      <section class="col-12 col-sm-12 col-md-12 col-lg-7"> <!-- Inicio segunda coluna da pagina searchclients -->
+
+        <div class="row mt-4 me-5 p-0"> <!--inicio Logo-->
+          <div class="d-flex d-none d-lg-block text-end">
+            <img class="logo-sc" src="imagens/logoidwall.png">
+          </div>          
         </div> <!--Fim Logo-->
 
-        <div class="row mt-4 p-0"> <!-- Inicio Titulo-->
+        <div class="row mt-5 p-0"> <!-- Inicio Titulo-->
           <div class="text-center">
-            <h1 class="Poppins-Medium cor-padrao1 mb-0 p-0" style="font-size: 4em;">Qual o Cliente hoje?</h1>
-            <p class="Poppins-Light cor-padrao1" style="font-size: 1.9em;">Se souber facilita, caso contrário a gente da um jeito!</p>
+            <h1 class="Poppins-Medium cor-padrao1 mb-0 p-0 title-size-sc">Qual o Cliente hoje?</h1>
+            <p class="Poppins-Light cor-padrao1 subtitle-size-sc">Se souber facilita, caso contrário a gente da um jeito!</p>
           </div>
         </div> <!-- Fim Titulo-->
 
         <div class="row justify-content-center"> <!--Inicio linhas dos formularios para pesquisa-->
 
-          <div class="col-md-10 mt-4"> <!--Inicio linha de pesquisa código cliente-->        
+          <div class="col-11 col-sm-11 col-md-10 mt-3"> <!--Inicio linha de pesquisa código cliente-->        
             <form action="action_page.php" class="form">
               <label class="Poppins-Medium cor-padrao1 mb-2 nome-label-sc" for="codigo-cliente">Código cliente:</label><br>
               <input class="label-search-client" placeholder="Digite o código do Cliente" type="text" id="codigo-cliente" name="codigo-cliente" value=""><br>
             </form>
           </div> <!--Fim linha de pesquisa código cliente-->
 
-          <div class="col-md-10 mt-3"> <!--Inicio linha de pesquisa numero cliente-->                        
+          <div class="col-11 col-sm-11 col-md-10 mt-3"> <!--Inicio linha de pesquisa numero cliente-->                        
             <form action="action_page.php" class="form">
               <label class="Poppins-Medium cor-padrao1 mb-2 nome-label-sc" for="numero-cliente">Nome cliente:</label><br>
               <input class="label-search-client" placeholder="Digite o nome do Cliente" type="text" id="numero-cliente" name="numero-cliente" value=""><br>
             </form>            
           </div> <!--Fim linha de pesquisa numero cliente-->  
 
-          <div class="col-md-10 mt-3"> <!--Inicio linha de pesquisa tipo protocolo e numero protocolo -->
+          <div class="col-11 col-sm-11 col-md-10 mt-3"> <!--Inicio linha de pesquisa tipo protocolo e numero protocolo -->
             <div class="row justify-content-between">
-              <div class="col-md-5">                       
+              <div class="col-md-5 col-lg-12 col-xxl-5 mb-3">                       
                 <form action="action_page.php" class="form">
                   <label class="Poppins-Medium cor-padrao1 mb-2 nome-label-sc" for="tipo-protocolo">Tipo de Protocolo:</label><br>
                   <select class="label-search-client Poppins-Medium cor-padrao1" id="tipo-protocolo" name="tipo-protocolo">
@@ -145,7 +165,7 @@
                 </form>            
               </div>
   
-              <div class="col-md-5">                       
+              <div class="col-md-5 col-lg-12 col-xxl-5 ">                       
                 <form action="action_page.php" class="form">
                   <label class="Poppins-Medium cor-padrao1 mb-2 nome-label-sc" for="numero-protocolo">Nº do Protocolo:</label><br>
                   <input class="label-search-client" placeholder="Digite o numero do protoloco" type="text" id="numero-protocolo" name="numero-protocolo" value=""><br>
@@ -154,8 +174,8 @@
             </div>            
           </div> <!--Fim linha de pesquisa tipo protocolo e numero protocolo -->
 
-          <div class="col-md-10 mt-3"> <!--Inicio checkbox para cliente ativo ou não --> 
-            <div class="col-md-5">
+          <div class="col-11 col-sm-11 col-md-10 mt-3"> <!--Inicio checkbox para cliente ativo ou não --> 
+            <div class="col-md-5 col-lg-12">
               <form action="action_page.php">
                 <label class="Poppins-Medium cor-padrao1 mb-2 nome-label-sc" for="ativo-inativo">O cliente está ativo?</label><br>
                 <div class="form-check form-switch">
@@ -171,15 +191,15 @@
             </div>          
           </div> <!--Inicio checkbox para cliente ativo ou não --> 
 
-          <div class="col-md-10 mt-3"> <!--Inicio botão pesquisa e link para lista completa de clientes -->
+          <div class="col-11 col-sm-11 col-md-10 mt-3"> <!--Inicio botão pesquisa e link para lista completa de clientes -->
             <div class="row justify-content-between">
-              <div class="col-md-5 m-0 p-0">
+              <div class="col-md-5 col-lg-12 col-xxl-5 m-0 p-0">
                 <a href="especific-clients.html">
-                  <input type="button"  class="btn-sc Poppins-Medium" value="Pesquisar">
+                  <input type="button" id="botao-pesquisar" class="btn-sc Poppins-Medium" value="Pesquisar">
                 </a>                             
               </div>
   
-              <div class="col-md-5 text-center">                       
+              <div class="col-md-5 col-lg-12 col-xxl-5 mt-2 mb-3 text-center">                       
                 <a href="all-clients.html" class="full-list-sc-a Poppins-Medium" href="#">Quer ver a lista completa?</a>           
               </div>
             </div>            
