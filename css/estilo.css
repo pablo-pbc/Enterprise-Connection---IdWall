@@ -588,6 +588,7 @@ body.container--some--clients{
     width: 115px;
     margin-top: 15%;
   }
+  
   .logo--monitor {
       display: flex;
       flex-direction: row-reverse;
