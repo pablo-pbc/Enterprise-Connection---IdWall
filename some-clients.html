@@ -23,7 +23,7 @@
     <title>Alguns - Clientes</title>
   </head>
 
-  <body class="container-fluid">
+  <body class="container-fluid container--some--clients">
 
     <div class="row"> <!--Inicio div para o menu de navegação-->
       <div class="col-1 m-4 p-0 fixed-top">
@@ -90,7 +90,92 @@
         </div>  <!--Fim menu de navegação Offcanvas -->
       </div>
     </div>  <!--Fim div para o menu de navegação-->
+    <section class="col-md-7 style--some--clients"> <!-- Inicio segunda coluna da pagina searchclients -->
+      <div class="row justify-content-end mt-5 me-5 p-0 mobile--logo-style"> <!--inicio Logo-->
+        <a href="index.html"><img class="estilo--logo--some-clients" src="imagens/logoidwall.png" style="height: 120px; width: 230px;"></a>
+      </div> <!--Fim Logo-->
 
+      <div class="row mt-4 p-0"> <!-- Inicio Titulo-->
+        <div class="text-center">
+          <h1 class="Poppins-Medium cor-padrao1 mb-0 p-0 mobile-font" style="font-size: 4em;">Qual o Cliente hoje?</h1>
+          <p class="Poppins-Light cor-padrao1 " style="font-size: 1.7em;">Hmmm... Temos algumas opções para você!!</p>
+        </div>
+      </div> <!-- Fim Titulo-->
+    </section>
+    <table class="table table--line Poppins-Medium cor-padrao1 mb-2 some--clients--style">
+      <thead >
+        <tr>
+          <th scope="col">Código</th>
+          <th scope="col">Nome</th>
+          <th scope="col" class="mobile--monitor" >Email</th>
+          <th scope="col" class="mobile--monitor">Tipo Protocolo</th>
+          <th scope="col" class="mobile--monitor" >Nº Protocolo</th>
+          <th scope="col">Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td><img  class="logo--all-clients--client"src="/imagens/ifood.png"> Ifood</td>
+          <td class="mobile--monitor">ifood@mail.com</td>
+          <td class="mobile--monitor">Cadastro Motoboy</td>
+          <td class="mobile--monitor">1111</td>
+          <td><button class="button-acess">Acessar</button></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Cliente 2</td>
+          <td class="mobile--monitor">client@mail.com</td>
+          <td class="mobile--monitor">Cadastro Motoboy</td>
+          <td class="mobile--monitor">2222</td>
+          <td><button class="button-acess">Acessar</button></td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>Cliente 3</td>
+          <td class="mobile--monitor">client@mail.com</td>
+          <td class="mobile--monitor">Cadastro Motoboy</td>
+          <td class="mobile--monitor">3333</td>
+          <td><button class="button-acess">Acessar</button></td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Cliente 4</td>
+          <td class="mobile--monitor">client@mail.com</td>
+          <td class="mobile--monitor">Cadastro Motoboy</td>
+          <td class="mobile--monitor">4444</td>
+          <td><button class="button-acess">Acessar</button></td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Cliente 5</td>
+          <td class="mobile--monitor">client@mail.com</td>
+          <td class="mobile--monitor">Cadastro Motoboy</td>
+          <td class="mobile--monitor">5555</td>
+          <td><button class="button-acess">Acessar</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </table>
+  <nav aria-label="Navegação de página exemplo" class="pagination--container--some-clients">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Anterior">
+          <span aria-hidden="true">&laquo;</span>
+          <span class="sr-only">Anterior</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Próximo">
+          <span aria-hidden="true">&raquo;</span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
 
   
     <!-- JavaScript (Opcional) -->
