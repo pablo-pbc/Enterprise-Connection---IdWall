@@ -25,8 +25,9 @@
 
   <body class="container-fluid container--some--clients">
 
-    <div class="row"> <!--Inicio div para o menu de navegação-->
-      <div class="col-1 m-4 p-0 fixed-top">
+    <div class="row fixed-top m-0 p-0 bg-div-header-especif-client"> <!--Inicio div para o menu de navegação-->
+      <div class="col-12 m-4 p-0">
+
         <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"> <!--Inicio icone para o menu de navegação Offcanvas -->
           <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-list icon-hw-main" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
@@ -34,6 +35,14 @@
         </a> <!--Fim icone para o menu de navegação Offcanvas -->
         
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background: #8561FF;"> <!--Inicio menu de navegação Offcanvas -->
+          
+          <div class="offcanvas-header"> <!--Inicio link voltar do offcanvas-->
+            <a href="index.html" class="link-voltar-offcanvas">
+              <h5 class="offcanvas-title Poppins-Medium cor-padrao4" id="offcanvasNavbarLabel"> < Voltar</h5>
+            </a>              
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div> <!--Fim link voltar do offcanvas-->
+
           <div>
             <header id="header-main" class="bg-header-main">
               <nav class="nav-main">
@@ -87,9 +96,14 @@
               </nav>
             </header>       
           </div>
+
         </div>  <!--Fim menu de navegação Offcanvas -->
       </div>
     </div>  <!--Fim div para o menu de navegação-->
+
+    <div class="row"><br><br><br></div>
+
+
     <section class="col-md-7 style--some--clients"> <!-- Inicio segunda coluna da pagina searchclients -->
       <div class="row justify-content-end mt-5 me-5 p-0 mobile--logo-style"> <!--inicio Logo-->
         <a href="index.html"><img class="estilo--logo--some-clients" src="imagens/logoidwall.png" style="height: 120px; width: 230px;"></a>
@@ -97,8 +111,8 @@
 
       <div class="row mt-4 p-0"> <!-- Inicio Titulo-->
         <div class="text-center">
-          <h1 class="Poppins-Medium cor-padrao1 mb-0 p-0 mobile-font" style="font-size: 4em;">Qual o Cliente hoje?</h1>
-          <p class="Poppins-Light cor-padrao1 " style="font-size: 1.7em;">Hmmm... Temos algumas opções para você!!</p>
+          <h1 class="Poppins-Medium cor-padrao1 mb-0 p-0 mobile-font">Qual o Cliente hoje?</h1>
+          <p class="Poppins-Light cor-padrao1 mobile-subfont">Hmmm... Temos algumas opções para você!!</p>
         </div>
       </div> <!-- Fim Titulo-->
     </section>
@@ -120,7 +134,7 @@
           <td class="mobile--monitor">ifood@mail.com</td>
           <td class="mobile--monitor">Cadastro Motoboy</td>
           <td class="mobile--monitor">1111</td>
-          <td><button class="button-acess">Acessar</button></td>
+          <td><a href="dash-clients.html"><button class="button-acess">Acessar</button></a></td>
         </tr>
         <tr>
           <th scope="row">2</th>

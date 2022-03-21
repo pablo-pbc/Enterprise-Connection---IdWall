@@ -446,6 +446,14 @@ body.container--some--clients{
   display: flex;
     width: 100%;
 }
+
+.mobile-font{
+  font-size: 3.5em!important;
+}
+
+.mobile-subfont {
+  font-size: 1.7em!important;
+}
 /*FIM ESTILOS SEARCH ALL-CLIENTS*/ 
 
 /*INICIO MEDIA QUERIES*/
@@ -621,7 +629,11 @@ body.container--some--clients{
   }
 
   .mobile-font{
-    font-size: 2.5em!important;
+    font-size: 1.7em!important;
+  }
+
+  .mobile-subfont {
+    font-size: 1em!important;
   }
 
   .mobile--logo-style{
@@ -665,6 +677,11 @@ body.container--some--clients{
   .bg-div-header-search-client {
     background: white;
   }
+
+  .mb-dash-md {
+    margin-bottom: 50px;
+  }
+
 }
 
 /*Telas tamanho lg*/
@@ -722,6 +739,24 @@ body.container--some--clients{
     background: #5C00FF;
     color: #C8C2FF;
     font-size: 1em;
+  }
+
+  .mb-dash-md {
+    margin-bottom: 50px;
+  }
+
+  .mt-dash-md {
+    margin-top: 30px;
+  }
+
+  .fontsz-dash-seg-colum {
+    font-size: 1.4em;
+  }
+
+  .link-content-dash {
+    text-decoration: none;
+    list-style: none;
+    font-size: .8em;
   }
   
 }
@@ -781,6 +816,20 @@ body.container--some--clients{
     background: #5C00FF;
     color: #C8C2FF;
     font-size: 1em;
+  }
+
+  .mt-dash-md {
+    margin-top: 30px;
+  }
+
+  .fontsz-dash-seg-colum {
+    font-size: 1.4em;
+  }
+
+  .link-content-dash {
+    text-decoration: none;
+    list-style: none;
+    font-size: .8em;
   }
 }
 

@@ -25,8 +25,9 @@
 
   <body class="container-fluid">
 
-    <div class="row"> <!--Inicio div para o menu de navegação-->
-      <div class="col-1 m-4 p-0">
+    <div class="row fixed-top m-0 p-0 bg-div-header-especif-client"> <!--Inicio div para o menu de navegação-->
+      <div class="col-12 m-4 p-0">
+
         <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample"> <!--Inicio icone para o menu de navegação Offcanvas -->
           <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-list icon-hw-main" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
@@ -34,6 +35,14 @@
         </a> <!--Fim icone para o menu de navegação Offcanvas -->
         
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" style="background: #8561FF;"> <!--Inicio menu de navegação Offcanvas -->
+          
+          <div class="offcanvas-header"> <!--Inicio link voltar do offcanvas-->
+            <a href="index.html" class="link-voltar-offcanvas">
+              <h5 class="offcanvas-title Poppins-Medium cor-padrao4" id="offcanvasNavbarLabel"> < Voltar</h5>
+            </a>              
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div> <!--Fim link voltar do offcanvas-->
+
           <div>
             <header id="header-main" class="bg-header-main">
               <nav class="nav-main">
@@ -87,9 +96,12 @@
               </nav>
             </header>       
           </div>
+
         </div>  <!--Fim menu de navegação Offcanvas -->
       </div>
     </div>  <!--Fim div para o menu de navegação-->
+
+    <div class="row"><br><br><br></div>
   
     <div class="container--monitor">
     <header class="box--container--monitor">
